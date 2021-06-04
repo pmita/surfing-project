@@ -19,3 +19,36 @@ nav {
     font-size: $h4;
   }
 }
+
+.burger-btn {
+  background: $sec-color;
+  height: 25px;
+  padding: 5px;
+  display: none;
+  &:hover {
+    cursor: pointer;
+  }
+  .burger-line {
+    margin: 5px 0 0 0;
+    height: 2px;
+    width: 20px;
+    background: $main-color;
+  }
+}
+
+@media screen and (max-width: 685px) {
+  .burger-btn {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    width: 100vw;
+    height: 90vh;
+    background: red;
+    @include flex(column, space-around, center);
+    transform: translateX(0%);
+  }
+}
