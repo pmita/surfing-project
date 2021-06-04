@@ -47,8 +47,13 @@ nav {
     right: 0;
     width: 100vw;
     height: 90vh;
-    background: red;
+    background: $main-color;
     @include flex(column, space-around, center);
+    transform: translateX(100%);
+    transition: all 1s ease;
+  }
+
+  .nav-active {
     transform: translateX(0%);
   }
 }
