@@ -1,0 +1,21 @@
+nav {
+  min-height: 10vh;
+  width: 100vw;
+  background: rgb(71, 70, 70);
+  color: $sec-color;
+  padding: 0 50px;
+  @include flex(row, space-between, center);
+}
+
+#logo {
+  font-size: $h1;
+  color: $sec-color;
+}
+
+.nav-links {
+  @include flex(row, space-between, center);
+  li {
+    padding: 0 25px;
+    font-size: $h4;
+  }
+}

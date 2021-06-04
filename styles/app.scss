@@ -2,6 +2,16 @@ h1 {
   color: pink;
 }
 
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
 //Importing our scss parcels
 @import "./base//variables";
 @import "./base//global";
+
+//Importing our scss components parcels
+@import "./components/nav";
